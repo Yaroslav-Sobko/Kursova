@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="900.0" prefHeight="980.0" prefWidth="1880.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursova.Controller">
+   <AnchorPane prefHeight="50.0" prefWidth="1880.0">
+      <children>
+         <TextField fx:id="containerX" layoutX="60.0" layoutY="13.0" promptText="Container Width" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="10.0" />
+         <TextField fx:id="containerY" layoutX="223.0" layoutY="10.0" promptText="Container Height" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="10.0" />
+         <Button layoutX="419.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeContainer" text="Change" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="10.0" />
+         <Button layoutX="533.0" layoutY="13.0" mnemonicParsing="false" onAction="#findSolution" text="Solution" AnchorPane.topAnchor="10.0" />
+         <Button layoutX="865.0" layoutY="13.0" mnemonicParsing="false" onAction="#rotateRectangle" text="Rotate" AnchorPane.leftAnchor="880.0" AnchorPane.topAnchor="10.0" />
+         <Button layoutX="1373.0" layoutY="13.0" mnemonicParsing="false" onAction="#buttonRemove" text="Remove" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="10.0" />
+         <TextField fx:id="fieldY" layoutX="1719.0" layoutY="2.0" promptText="Height" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="10.0" />
+         <TextField fx:id="fieldX" layoutX="1549.0" layoutY="2.0" promptText="Width" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="10.0" />
+          <Button onAction="#buttonAdd" text="Add" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0" />
+      </children>
+   </AnchorPane>
+   <ScrollPane layoutX="50.0" layoutY="46.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="880.0" prefWidth="1780.0">
+      <content>
+         <Pane prefHeight="10000.0" prefWidth="1880.0">
+            <children>
+               <Rectangle fx:id="mainContainer" arcHeight="5.0" arcWidth="5.0" fill="#e0e6eb" height="832.0" layoutX="14.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="752.0" />
+                <VBox fx:id="rectangleContainer" alignment="TOP_RIGHT" layoutX="841.0" layoutY="20.0" prefHeight="831.0" prefWidth="701.0" />
+            </children>
+         </Pane>
+      </content>
+   </ScrollPane>
+</Pane>
